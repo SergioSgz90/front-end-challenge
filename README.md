@@ -1,4 +1,4 @@
-### FRONT END CHALLENGE
+# FRONT END CHALLENGE
 
 Developed by: Sergio Garcia
 
