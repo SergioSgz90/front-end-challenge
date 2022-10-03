@@ -1,7 +1,14 @@
 import styles from "./index.module.css";
 import Trash from "../../assets/Trash.svg";
 import ArrowRepeat from "../../assets/ArrowRepeat.svg";
+import { iAlbum } from "../../models/iAlbum";
+
 export const AlbumUpdate = (): JSX.Element => {
+
+
+
+
+  
   return (
     <main className={styles.AddAlbum}>
       <div className={styles.Add_Container}>
