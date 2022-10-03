@@ -1,0 +1,25 @@
+.AlbumList {
+  padding: 1rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.AlbumList_Container {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-auto-rows: 210px;
+  grid-template-columns: repeat(3, 180px);
+}
+
+@media screen and (max-width: 600px) {
+  .AlbumList_Container {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-auto-rows: 210px;
+    grid-template-columns: repeat(1, 180px);
+  }
+}
