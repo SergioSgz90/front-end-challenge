@@ -22,11 +22,10 @@ export const AlbumUpdate = (): JSX.Element => {
               <strong> Artist:</strong> Radiohead
             </li>
             <li className={styles.Add_List_Li}>
-              {" "}
               <strong>Album Name:</strong> Hail to the Thief
             </li>
             <li className={styles.Add_List_Li}>
-              <strong>Year:</strong> 2003{" "}
+              <strong>Year:</strong> 2003
             </li>
             <li className={styles.Add_List_Li}>
               <strong>Description:</strong> Hail to the Thief is the sixth album

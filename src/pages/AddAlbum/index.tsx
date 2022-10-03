@@ -1,39 +1,83 @@
-import styles from './index.module.css'
+import { SyntheticEvent, useContext, useState } from "react";
+import { AlbumListContext } from "../../context/albumList.context";
+import { iAlbum } from "../../models/iAlbum";
+import styles from "./index.module.css";
 
-export const AddAlbum = (): JSX.Element => {
+export const AddAlbum = () => {
+  const { addAlbum } = useContext(AlbumListContext);
+  const initialSate: Partial<iAlbum> = {
+    artist: "",
+    albumName: "",
+    albumPicture: "",
+    albumInfo: "",
+  };
+  const [formState, setFormState] = useState(initialSate);
+
+  const handleSubmit = (ev: SyntheticEvent) => {
+    ev.preventDefault();
+    addAlbum({
+      artist: formState.artist as string,
+      albumName: formState.albumName as string,
+      albumPicture: formState.albumPicture as string,
+      albumInfo: formState.albumInfo as string,
+    });
+  };
+  const handleChange = (ev: SyntheticEvent) => {
+    const element = ev.target as HTMLFormElement;
+    setFormState({ ...formState, [element.name]: element.value });
+  };
+
   return (
     <main className={styles.AddAlbum}>
       <div className={styles.Add_Container}>
-        <h2> Add An Album:</h2>
-        <div className={styles.Add_List_Container}>
-          <ul className={styles.Add_List}>
-            <li className={styles.Add_List_Li}>
-              <strong> Artist:</strong> Radiohead
-            </li>
-            <li className={styles.Add_List_Li}>
-              {' '}
-              <strong>Album Name:</strong> Hail to the Thief
-            </li>
-            <li className={styles.Add_List_Li}>
-              <strong>Year:</strong> 2003{' '}
-            </li>
-            <li className={styles.Add_List_Li}>
-              <strong>Description:</strong> Hail to the Thief is the sixth album
-              by the English rock band Radiohead. It was released on 9 June 2003
-              through Parlophone internationally and a day later through Capitol
-              Records in the United States. It was the last album released under
-              Radiohead's record contract with EMI, the parent company of
-              Parlophone and Capitol. After transitioning to a more electronic
-              style on their albums Kid A (2000) and Amnesiac (2001), which were
-              recorded through protracted studio experimentation, Radiohead
-              sought to work more spontaneously, combining electronic and rock
-              music. They recorded most of Hail to the Thief in two weeks in Los
-              Angeles with their longtime producer Nigel Godrich, focusing on
-              live takes rather than overdubs.
-            </li>
-          </ul>
-        </div>
+        <h2>Add An Album:</h2>
+
+        <form className={styles.Add_List_Container} onSubmit={handleSubmit}>
+          <input
+            className={styles.Add_List_Li}
+            type="text"
+            name="artist"
+            placeholder="Name of the Artist"
+            
+            value={formState.artist}
+            onChange={handleChange}
+          />
+          <input
+            className={styles.Add_List_Li}
+            type="text"
+            name="albumName"
+            placeholder="Name of the Album"
+            
+            value={formState.albumName}
+            onChange={handleChange}
+          />
+          <input
+            className={styles.Add_List_Li}
+            type="text"
+            name="albumPicture"
+            placeholder="image URL"
+            
+            value={formState.albumPicture}
+            onChange={handleChange}
+          />
+
+          <input
+            className={styles.Add_List_Li}
+            name="albumInfo"
+            placeholder="Add a Description"
+            type="text"
+            value={formState.albumInfo}
+            onChange={handleChange}
+          />
+
+          <button className={styles.button} type="submit">
+            Upload Sound
+          </button>
+        </form>
       </div>
     </main>
-  )
-}
+  );
+};
+
+
+

@@ -9,13 +9,6 @@ export const AlbumList = (): JSX.Element => {
      
         <div className={styles.AlbumList_Container}>
           <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
           <AddCardButton />
             </div>
     </main>

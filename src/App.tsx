@@ -7,56 +7,60 @@ import { AlbumInfo } from './pages/AlbumInfo'
 import { AlbumUpdate } from './pages/AlbumUpdate'
 
 import './App.css'
+import { AlbumListProvider } from './context/albumList.provider'
 
 function App (): JSX.Element {
   return (
-    <div className="App">
-      <Layout>
-        <Routes>
-          <Route
-            path=""
-            element={
-              <React.Suspense>
-                <AlbumList />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="albumList"
-            element={
-              <React.Suspense>
-                <AlbumList />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/albumList/addAlbum"
-            element={
-              <React.Suspense>
-                <AddAlbum />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/albumList/albumInfo"
-            element={
-              <React.Suspense>
-                <AlbumInfo />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/albumUpdate"
-            element={
-              <React.Suspense>
-                <AlbumUpdate />
-              </React.Suspense>
-            }
-          />
-        </Routes>
-      </Layout>
-    </div>
-  )
+    <AlbumListProvider>
+      <div className="App">
+        <Layout>
+          <Routes>
+            <Route
+              path=""
+              element={
+                <React.Suspense>
+                  <AlbumList />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="albumList"
+              element={
+                <React.Suspense>
+                  <AlbumList />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="/albumList/addAlbum"
+              element={
+                <React.Suspense>
+                  <AddAlbum />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="/albumList/albumInfo"
+              element={
+                <React.Suspense>
+                  <AlbumInfo />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="/albumUpdate"
+              element={
+                <React.Suspense>
+                  <AlbumUpdate />
+                </React.Suspense>
+              }
+            />
+          </Routes>
+        </Layout>
+      </div>
+    </AlbumListProvider>
+  );
 }
 
 export default App
+

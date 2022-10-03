@@ -1,1 +1,11 @@
-{"albums":[]}
+{
+  "albums": [
+    {
+      "artist": "The Wonder Years",
+      "albumName": "The Hum Goes On Forever",
+      "albumPicture": "https://media.pitchfork.com/photos/630f6e75ef4ca49b564c21d5/master/pass/The-Wonder-Years.jpg",
+      "albumInfo": "Even before he was a parent, Dan Campbell felt the crushing weight of adult expectations. “I’m 26/All the people I graduated with all have kids, all have wives,” he roared on 2013’s “Passing Through a Screen Door,” before bemoaning his doomed, lonely outlook: “Did I fuck up?” Nearly 10 years later, the Wonder Years’ frontman lives in a South Jersey suburb of Philadelphia with his wife and three-year-old son. But anxiety is like matter: It can’t be destroyed. Even after your worst fears don’t come true, they take on another shape. Now that Campbell has a child, there’s the other half of “Passing” to worry about: “I don’t want my children growing up to be anything like me.” On The Hum Goes on Forever, the Wonder Years write the impossible: a pop punk parenthood record that attempts to grow up without growing out of their hooks and heart-achingly earnest outlook.",
+      "id": 3
+    }
+  ]
+}

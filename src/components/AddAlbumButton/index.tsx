@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 import { Link } from 'react-router-dom'
-import add_album_button from '../../assets/add_album_button.svg'
+import add_album_button from "../../assets/add_album_button.svg"
 export const AddCardButton = (): JSX.Element => {
   return (
     <Link to="addAlbum">
@@ -10,3 +10,4 @@ export const AddCardButton = (): JSX.Element => {
     </Link>
   )
 }
+
