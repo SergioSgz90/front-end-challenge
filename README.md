@@ -17,7 +17,7 @@ Developed by: Sergio Garcia
 ## STACK:
 
 - Vite
-- Figma
+- Figma (https://www.figma.com/file/dd8uQ7Ot4eV53b0x97FSLX/ALBUMSTER_DESIGN?node-id=0%3A1)
 - React
 - React Router
 - Typescript
