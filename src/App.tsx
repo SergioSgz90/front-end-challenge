@@ -1,6 +1,9 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Layout } from '../src/components/Layout'
+import { AlbumList } from '../src/pages/AlbumList'
+import { AddAlbum } from './pages/AddAlbum'
+import { AlbumInfo } from './pages/AlbumInfo'
 
 import './App.css'
 
@@ -9,6 +12,14 @@ function App (): JSX.Element {
     <div className="App">
       <Layout>
         <Routes>
+          <Route
+            path="*"
+            element={
+              <React.Suspense>
+                <AlbumList />
+              </React.Suspense>
+            }
+          />
           <Route
             path="albumList"
             element={

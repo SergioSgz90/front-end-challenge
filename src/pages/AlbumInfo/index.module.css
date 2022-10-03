@@ -1,0 +1,68 @@
+.AlbumInfo {
+  padding: 1rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-self: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.AlbumImg {
+  height: 520px;
+  display: -webkit-inline-flex;
+}
+.AlbumInfo_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #444444;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 410px;
+  width: 310px;
+  border-radius: 30px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.Album_List_Container {
+  display: flex;
+  overflow-y: scroll;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.Album_List {
+  flex-direction: column;
+  list-style: none;
+}
+
+.Album_List_Li {
+  flex-direction: column;
+  list-style: none;
+  padding-bottom: 12px;
+}
+
+.pencil {
+  padding: 10px;
+  padding-left: 60%;
+  justify-content: right;
+}
+
+@media screen and (max-width: 700px) {
+  .AlbumInfo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .AlbumImg {
+  height: 300px;
+  display: -webkit-inline-flex;
+}
+}
