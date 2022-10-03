@@ -17,6 +17,7 @@ Developed by: Sergio Garcia
 ## STACK:
 
 - Vite
+- Figma
 - React
 - React Router
 - Typescript
