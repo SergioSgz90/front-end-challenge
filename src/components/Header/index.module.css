@@ -1,0 +1,20 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  
+}
+
+.logo {
+  cursor: pointer;
+  height: 100px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 5px;
+  margin: 0;
+
+}
+.logo:hover { filter: drop-shadow(0 0 2em #666666aa);
+}
