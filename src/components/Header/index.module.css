@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   margin: 40px;
-  
 }
 
 .logo {
@@ -14,7 +13,7 @@
   color: var(--color-white);
   padding: 5px;
   margin: 0;
-
 }
-.logo:hover { filter: drop-shadow(0 0 2em #666666aa);
+.logo:hover {
+  filter: drop-shadow(0 0 2em #666666aa);
 }

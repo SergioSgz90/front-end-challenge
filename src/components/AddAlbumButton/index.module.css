@@ -1,0 +1,14 @@
+.AddAlbum_container {
+  width: 160px;
+  height: 160px;
+  border-radius: 15%;
+  background-color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AddAlbum_button {
+  display: flex;
+  height: 30px;
+}

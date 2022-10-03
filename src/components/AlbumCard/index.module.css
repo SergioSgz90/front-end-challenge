@@ -23,15 +23,14 @@
 .AlbumCard:hover {
   cursor: pointer;
   color: #f59904;
-
 }
 
 .AlbumCard_AlbumName {
   display: flex;
   font-size: 10px;
   justify-content: center;
-  color:#FFFFFF ;
+  color: #ffffff;
 }
 .AlbumCard_AlbumName:hover {
-    color: #f59904;
+  color: #f59904;
 }
