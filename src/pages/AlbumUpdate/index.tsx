@@ -1,29 +1,27 @@
-import styles from './index.module.css'
-import { Link } from 'react-router-dom'
-import pencil from '../../assets/Pencil.svg'
-export const AlbumInfo = (): JSX.Element => {
+import styles from "./index.module.css";
+import Trash from "../../assets/Trash.svg";
+import ArrowRepeat from "../../assets/ArrowRepeat.svg";
+export const AlbumUpdate = (): JSX.Element => {
   return (
-    <main className={styles.AlbumInfo}>
-      <img
-        className={styles.AlbumImg}
-        src="https://m.media-amazon.com/images/I/A1y8IvOibwL._SL1500_.jpg"
-        alt="Album Image Missing"
-      />
-      <div className={styles.AlbumInfo_Container}>
-        <h2>Album info</h2>
-        <div className={styles.Album_List_Container}>
-          <ul className={styles.Album_List}>
-            <li className={styles.Album_List_Li}>
+    <main className={styles.AddAlbum}>
+      <div className={styles.Add_Container}>
+        <h2> Update Album:</h2>
+        <div className={styles.Add_List_Container}>
+          <ul className={styles.Add_List}>
+            <li className={styles.Add_List_Li}>
+              <strong> Image URL: </strong>
+            </li>
+            <li className={styles.Add_List_Li}>
               <strong> Artist:</strong> Radiohead
             </li>
-            <li className={styles.Album_List_Li}>
-              {' '}
+            <li className={styles.Add_List_Li}>
+              {" "}
               <strong>Album Name:</strong> Hail to the Thief
             </li>
-            <li className={styles.Album_List_Li}>
-              <strong>Year:</strong> 2003{' '}
+            <li className={styles.Add_List_Li}>
+              <strong>Year:</strong> 2003{" "}
             </li>
-            <li className={styles.Album_List_Li}>
+            <li className={styles.Add_List_Li}>
               <strong>Description:</strong> Hail to the Thief is the sixth album
               by the English rock band Radiohead. It was released on 9 June 2003
               through Parlophone internationally and a day later through Capitol
@@ -39,10 +37,13 @@ export const AlbumInfo = (): JSX.Element => {
             </li>
           </ul>
         </div>
-        <Link to="/albumUpdate" className={styles.pencil}>
-          <img src={pencil} alt="" />
-        </Link>
+        <div className={styles.buttons_container}>
+          <img className={styles.buttons} src={Trash} alt="delete" />
+          <img className={styles.buttons} src={ArrowRepeat} alt="update" />
+        </div>
       </div>
     </main>
-  )
-}
+  );
+  
+};
+

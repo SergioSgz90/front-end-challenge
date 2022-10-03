@@ -4,6 +4,7 @@ import { Layout } from '../src/components/Layout'
 import { AlbumList } from '../src/pages/AlbumList'
 import { AddAlbum } from './pages/AddAlbum'
 import { AlbumInfo } from './pages/AlbumInfo'
+import { AlbumUpdate } from './pages/AlbumUpdate'
 
 import './App.css'
 
@@ -13,7 +14,7 @@ function App (): JSX.Element {
       <Layout>
         <Routes>
           <Route
-            path="*"
+            path=""
             element={
               <React.Suspense>
                 <AlbumList />
@@ -41,6 +42,14 @@ function App (): JSX.Element {
             element={
               <React.Suspense>
                 <AlbumInfo />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/albumUpdate"
+            element={
+              <React.Suspense>
+                <AlbumUpdate />
               </React.Suspense>
             }
           />
