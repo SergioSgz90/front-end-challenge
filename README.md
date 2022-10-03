@@ -1,5 +1,6 @@
 # FRONT END CHALLENGE
 
+
 Developed by: Sergio Garcia
 
 ## Description:
@@ -8,6 +9,10 @@ Developed by: Sergio Garcia
   edit them and diplay them in a beautiful layout. You can access to an info page of each album with detailed information by clicking on them.
 
 - Designed to be responsive and appealing to the eye.
+
+![Screenshot 2022-10-03 at 11 15 03](https://user-images.githubusercontent.com/101208273/193542181-9b61660d-a587-4d4f-ac52-c84560f11a19.png)
+
+![Screenshot 2022-10-03 at 11 15 28](https://user-images.githubusercontent.com/101208273/193542272-82df724b-4fe3-42af-8873-04b82771dad9.png)
 
 ## STACK:
 
