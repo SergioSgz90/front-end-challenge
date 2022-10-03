@@ -1,0 +1,58 @@
+
+
+.AddAlbum {
+padding: 1rem;
+align-content: center;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: row;
+align-self: auto;
+align-items: center;
+justify-content: center;
+gap: 40px;
+}
+
+.Add_Container {
+    align-items: center;
+    justify-content: center;
+    background-color: #444444;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 410px;
+    width: 310px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+   overflow: hidden;
+ 
+}
+
+.Add_List_Container {
+    display: flex;
+    overflow-y:scroll;
+    width: 100%;
+    padding-right: 30px;
+ 
+}
+
+.Add_List_Li{
+    flex-direction: column;
+    list-style: none;
+    padding-bottom: 12px;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .AlbumList_Container {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-auto-rows: 210px;
+    grid-template-columns: repeat(1, 180px);
+}
+}
