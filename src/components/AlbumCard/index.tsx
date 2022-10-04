@@ -10,11 +10,10 @@ export const AlbumCard = (): JSX.Element => {
     <>
       {albums.map((item) => (
         <Link
-          to="/albumList/albumInfo"
+          to={`/albumInfo/${item.id}`}
           className={styles.AlbumCard}
           key={item.id}
         >
-        
           <img
             className={styles.AlbumCard_img}
             src={item.albumPicture}
@@ -24,7 +23,5 @@ export const AlbumCard = (): JSX.Element => {
         </Link>
       ))}
     </>
-  );
-};
-
-
+  )
+}

@@ -1,6 +1,6 @@
-import { iAlbum } from '../src/models/iAlbum';
+import { iAlbum } from '../src/models/iAlbum'
 
-const url = 'http://localhost:3500/albums/';
+const url = 'http://localhost:3500/albums/'
 
 export function getAllAlbums (): Promise<Array<iAlbum>> {
     return fetch(url).then((resp) => resp.json())
@@ -23,4 +23,8 @@ export function deleteAlbum (id: iAlbum['id']) {
     return fetch(url + id, {
         method: 'DELETE',
     });
+}
+
+export function getAlbumbyId(id: iAlbum["id"]): Promise<Array<iAlbum>> {
+    return fetch(url + id).then((resp) => resp.json())
 }

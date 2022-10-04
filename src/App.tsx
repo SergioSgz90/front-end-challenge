@@ -15,14 +15,7 @@ function App (): JSX.Element {
       <div className="App">
         <Layout>
           <Routes>
-            <Route
-              path=""
-              element={
-                <React.Suspense>
-                  <AlbumList />
-                </React.Suspense>
-              }
-            />
+            
             <Route
               path="albumList"
               element={
@@ -40,7 +33,7 @@ function App (): JSX.Element {
               }
             />
             <Route
-              path="/albumList/albumInfo"
+              path="/albumInfo/:id"
               element={
                 <React.Suspense>
                   <AlbumInfo />

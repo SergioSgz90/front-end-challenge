@@ -10,6 +10,7 @@ export const AddAlbum = () => {
     albumName: "",
     albumPicture: "",
     albumInfo: "",
+    albumYear: ""
   };
   const [formState, setFormState] = useState(initialSate);
 
@@ -20,11 +21,12 @@ export const AddAlbum = () => {
       albumName: formState.albumName as string,
       albumPicture: formState.albumPicture as string,
       albumInfo: formState.albumInfo as string,
-    });
-  };
+      albumYear: formState.albumYear as string
+    })
+  }
   const handleChange = (ev: SyntheticEvent) => {
-    const element = ev.target as HTMLFormElement;
-    setFormState({ ...formState, [element.name]: element.value });
+    const element = ev.target as HTMLFormElement
+    setFormState({ ...formState, [element.name]: element.value })
   };
 
   return (
@@ -38,7 +40,6 @@ export const AddAlbum = () => {
             type="text"
             name="artist"
             placeholder="Name of the Artist"
-            
             value={formState.artist}
             onChange={handleChange}
           />
@@ -47,16 +48,23 @@ export const AddAlbum = () => {
             type="text"
             name="albumName"
             placeholder="Name of the Album"
-            
             value={formState.albumName}
             onChange={handleChange}
           />
           <input
             className={styles.Add_List_Li}
             type="text"
+            name="albumYear"
+            placeholder="Year"
+            value={formState.albumYear}
+            onChange={handleChange}
+          />
+
+          <input
+            className={styles.Add_List_Li}
+            type="text"
             name="albumPicture"
             placeholder="image URL"
-            
             value={formState.albumPicture}
             onChange={handleChange}
           />
@@ -77,7 +85,5 @@ export const AddAlbum = () => {
       </div>
     </main>
   );
-};
 
-
-
+}

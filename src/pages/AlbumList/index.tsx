@@ -4,9 +4,9 @@ import styles from './index.module.css'
 
 
 export const AlbumList = (): JSX.Element => {
+
   return (
     <main className={styles.AlbumList}>
-     
         <div className={styles.AlbumList_Container}>
           <AlbumCard />
           <AddCardButton />
@@ -14,3 +14,4 @@ export const AlbumList = (): JSX.Element => {
     </main>
   )
 }
+
