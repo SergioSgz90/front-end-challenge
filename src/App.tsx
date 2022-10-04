@@ -12,11 +12,20 @@ import { AlbumListProvider } from './context/albumList.provider'
 function App (): JSX.Element {
   return (
     <AlbumListProvider>
-      <div className="App">
+      <div className='App'>
         <Layout>
           <Routes>
             <Route
-              path="albumList"
+              path='*'
+              element={
+                <React.Suspense>
+                  <AlbumList />
+                </React.Suspense>
+              }
+            />
+
+            <Route
+              path='albumList'
               element={
                 <React.Suspense>
                   <AlbumList />
@@ -24,7 +33,7 @@ function App (): JSX.Element {
               }
             />
             <Route
-              path="/albumList/addAlbum"
+              path='/albumList/addAlbum'
               element={
                 <React.Suspense>
                   <AddAlbum />
@@ -32,7 +41,7 @@ function App (): JSX.Element {
               }
             />
             <Route
-              path="/albumInfo/:id"
+              path='/albumInfo/:id'
               element={
                 <React.Suspense>
                   <AlbumInfo />
@@ -40,7 +49,7 @@ function App (): JSX.Element {
               }
             />
             <Route
-              path="/albumUpdate/:id"
+              path='/albumUpdate/:id'
               element={
                 <React.Suspense>
                   <AlbumUpdate />
@@ -51,8 +60,7 @@ function App (): JSX.Element {
         </Layout>
       </div>
     </AlbumListProvider>
-  );
+  )
 }
 
 export default App
-

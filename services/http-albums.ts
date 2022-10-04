@@ -24,7 +24,6 @@ export function deleteAlbum (id: iAlbum['id']) {
         method: 'DELETE',
     });
 }
-
 export function getAlbumbyId(id: iAlbum["id"]): Promise<Array<iAlbum>> {
     return fetch(url + id).then((resp) => resp.json())
 }

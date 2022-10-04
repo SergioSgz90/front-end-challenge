@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import styles from "./index.module.css";
-import pencil from "../../assets/Pencil.svg";
-import { iAlbum } from "../../models/iAlbum";
-import { getAlbumbyId } from "../../../services/http-albums";
+import { useState, useEffect } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import styles from './index.module.css'
+import pencil from '../../assets/Pencil.svg'
+import { iAlbum } from '../../models/iAlbum'
+import { getAlbumbyId } from '../../../services/http-albums'
 
 export const AlbumInfo = (): JSX.Element => {
   const [info, setInfo] = useState<iAlbum|null>(null)
@@ -16,13 +16,12 @@ export const AlbumInfo = (): JSX.Element => {
     [id]
   )
 
-
   return (
     <main className={styles.AlbumInfo}>
       <img
         className={styles.AlbumImg}
         src={info?.albumPicture}
-        alt="Album Image Missing"
+        alt='Album Image Missing'
       />
       <div className={styles.AlbumInfo_Container}>
         <h2>Album info</h2>
@@ -42,14 +41,10 @@ export const AlbumInfo = (): JSX.Element => {
             </li>
           </ul>
         </div>
-        <Link to={`/albumUpdate/${id}`}className={styles.pencil}>
-          <img src={pencil} alt="update" />
+        <Link to={`/albumUpdate/${id}`} className={styles.pencil}>
+          <img src={pencil} alt='update' />
         </Link>
       </div>
     </main>
-  );
+  )
 }
-
-
-
-

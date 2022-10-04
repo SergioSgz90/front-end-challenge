@@ -1,9 +1,9 @@
-import { createContext } from "react";
-import { iAlbum } from "../models/iAlbum";
+import { createContext } from 'react'
+import { iAlbum } from '../models/iAlbum'
 
 const initialContext: {
-  albums: Array<iAlbum>;
-  addAlbum(album: Omit<iAlbum, "id">): void
+  albums: Array<iAlbum>
+  addAlbum(album: Omit<iAlbum, 'id'>): void
   deleteAlbum(id: number): void
   updateAlbum(album: iAlbum):void
 } = {
