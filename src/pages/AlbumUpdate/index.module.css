@@ -17,40 +17,60 @@
   background-color: #444444;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 410px;
+  height: 610px;
   width: 410px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  position: relative;
-  overflow: hidden;
+
 }
 
 .Add_List_Container {
   display: flex;
+  flex-direction: column;
   overflow-y: scroll;
-  width: 100%;
-  padding-right: 30px;
+  width: 90%;
+  height: 100%;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+
 }
 
 .Add_List_Li {
+  border-radius: 20px;
   flex-direction: column;
   list-style: none;
-  padding-bottom: 12px;
+  padding: 12px;
+  height: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.Add_List_Li_Description {
+
+  border-radius: 20px;
+  flex-direction: column;
+  list-style: none;
+  padding: 10px;
+  height: 150px;
+  margin-bottom: 10px;
+  border: none;
+  overflow-y: scroll;
 }
 
 .buttons_container {
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 250px;
+  padding: 25px;
+
 }
 
 .buttons {
-  height: 30px;
-  cursor: pointer;
+  height: 40px;
+  cursor: pointer; 
 }
 
 @media screen and (max-width: 600px) {

@@ -41,7 +41,7 @@ function App (): JSX.Element {
               }
             />
             <Route
-              path="/albumUpdate"
+              path="/albumUpdate/:id"
               element={
                 <React.Suspense>
                   <AlbumUpdate />

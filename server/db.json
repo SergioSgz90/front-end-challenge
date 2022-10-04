@@ -1,25 +1,19 @@
 {
   "albums": [
     {
-      "artist": "The Wonder Years",
-      "albumName": "The Hum Goes On Forever",
-      "albumPicture": "https://media.pitchfork.com/photos/630f6e75ef4ca49b564c21d5/master/pass/The-Wonder-Years.jpg",
-      "albumInfo": "Even before he was a parent, Dan Campbell felt the crushing weight of adult expectations. “I’m 26/All the people I graduated with all have kids, all have wives,” he roared on 2013’s “Passing Through a Screen Door,” before bemoaning his doomed, lonely outlook: “Did I fuck up?” Nearly 10 years later, the Wonder Years’ frontman lives in a South Jersey suburb of Philadelphia with his wife and three-year-old son. But anxiety is like matter: It can’t be destroyed. Even after your worst fears don’t come true, they take on another shape. Now that Campbell has a child, there’s the other half of “Passing” to worry about: “I don’t want my children growing up to be anything like me.” On The Hum Goes on Forever, the Wonder Years write the impossible: a pop punk parenthood record that attempts to grow up without growing out of their hooks and heart-achingly earnest outlook.",
-      "id": 3
-    },
-    {
       "artist": "Radiohead",
       "albumName": "Hail to the Thief",
       "albumPicture": "https://m.media-amazon.com/images/I/A1y8IvOibwL._SL1500_.jpg",
       "albumInfo": "Hail to the Thief is the sixth album by the English rock band Radiohead. It was released on 9 June 2003 through Parlophone internationally and a day later through Capitol Records in the United States. It was the last album released under Radiohead's record contract with EMI, the parent company of Parlophone and Capitol.  After transitioning to a more electronic style on their albums Kid A (2000) and Amnesiac (2001), which were recorded through protracted studio experimentation, Radiohead sought to work more spontaneously, combining electronic and rock music. They recorded most of Hail to the Thief in two weeks in Los Angeles with their longtime producer Nigel Godrich, focusing on live takes rather than overdubs.",
-      "id": 4
+      "id": 4,
+      "albumYear": "2003"
     },
     {
       "artist": "Ólafur Arnalds",
       "albumName": "some kind of peace",
       "albumPicture": "https://m.media-amazon.com/images/I/71OGPZsJakL._SL1500_.jpg",
       "albumInfo": "On some kind of peace, Arnalds makes his most sophisticated record yet and it is heartbreakingly brilliant: a collection of exquisitely assembled compositions that appear delicate from a distance before revealing a close-quarters core strength. Listening to an Olafur Arnalds record is also a distinctly cinematic experience. His tracks have a way of enveloping the listener, invoking images of desolate valleys, snow-capped mountains, rolling hills. This penchant for the cinematic is no accident as it was film music that has inspired him in the first place to take this road where he would fuse different strands of ambient, classical, and film music into his own kind of expression. Indeed, fans of film scores, minimalism, avant-garde composition, ambient electronic music, and trip-hop should all find much to sink their teeth into his music. Arnalds certainly isn't the first to integrate those forms, yet his method of assembling them into a unified system is impressive enough. Although he uses several musical styles on this album as he oscillates between them, his rather broad stylistic overview does not prevent a cohesion in the compositional style.",
-      "albumYear": "2020",
+      "albumYear": "2021",
       "id": 5
     }
   ]

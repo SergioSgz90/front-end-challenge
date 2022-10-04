@@ -42,13 +42,14 @@ export const AlbumInfo = (): JSX.Element => {
             </li>
           </ul>
         </div>
-        <Link to="/albumUpdate" className={styles.pencil}>
-          <img src={pencil} alt="" />
+        <Link to={`/albumUpdate/${id}`}className={styles.pencil}>
+          <img src={pencil} alt="update" />
         </Link>
       </div>
     </main>
   );
 }
+
 
 
 
