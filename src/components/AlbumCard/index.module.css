@@ -16,13 +16,15 @@
 .AlbumCard_img:hover {
   cursor: pointer;
   border-width: 2px;
-  outline: #f59904;
+
   outline-style: solid;
   color: #f59904;
+  border-radius: 0px;
+  transition: 0.3s;
 }
 .AlbumCard:hover {
   cursor: pointer;
-  color: #f59904;
+
 }
 
 .AlbumCard_AlbumName {

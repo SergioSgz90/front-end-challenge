@@ -23,6 +23,46 @@
       "albumInfo": "Random Access Memories is the fourth studio album by the French electronic duo Daft Punk, released on 17 May 2013 through Columbia Records. The album pays tribute to late 1970s and early 1980s American music, particularly from Los Angeles. This theme is reflected in the album's packaging, as well as its promotional campaign, which included billboards, television advertisements, and a web series. Recording sessions took place from 2008 to 2012 at Henson, Conway and Capitol Studios in California, Electric Lady Studios in New York City, and Gang Recording Studio in Paris, France. Random Access Memories was the duo's final album before they split up in February 2021.",
       "albumYear": "2013",
       "id": 6
+    },
+    {
+      "artist": "The Wonder Years",
+      "albumName": "The Hum Goes On Forever",
+      "albumPicture": "https://media.pitchfork.com/photos/630f6e75ef4ca49b564c21d5/master/pass/The-Wonder-Years.jpg",
+      "albumInfo": "Even before he was a parent, Dan Campbell felt the crushing weight of adult expectations. “I’m 26/All the people I graduated with all have kids, all have wives,” he roared on 2013’s “Passing Through a Screen Door,” before bemoaning his doomed, lonely outlook: Nearly 10 years later, the Wonder Years’ frontman lives in a South Jersey suburb of Philadelphia with his wife and three-year-old son. But anxiety is like matter: It can’t be destroyed. Even after your worst fears don’t come true, they take on another shape. Now that Campbell has a child, there’s the other half of “Passing” to worry about: “I don’t want my children growing up to be anything like me.” On The Hum Goes on Forever, the Wonder Years write the impossible: a pop punk parenthood record that attempts to grow up without growing out of their hooks and heart-achingly earnest outlook.",
+      "albumYear": "2022",
+      "id": 7
+    },
+    {
+      "artist": "Lord Huron",
+      "albumName": "Lonsome Dreams",
+      "albumPicture": "https://m.media-amazon.com/images/I/81WzL2XS1TL._SL1500_.jpg",
+      "albumInfo": "Ben Schneider's a man out of time, all rust-colored and sepia-toned, prone to dressing like an extra from Cold Mountain. The Lord Huron frontman sings of river crossings, trudging through forests, shouting out his love from the mountaintops, all these big, romantic, pre-cell-phone notion of fidelity, honor, the lay of the land. After a couple of well-received EPs-- including 2010's fine Mighty-- the Michigan-to-L.A. transplant's debut LP, Lonesome Dreams, finds Schneider digging his mud-caked heels into his music's more rustic side, shedding much of the electronic flourishes and international flavors of his early EPs and going to town on harmony-rich folk-rock. But by throwing the focus onto the latter half of his Urban Cowboy routine, Schneider's vision has narrowed, his once-vibrant, open-armed Americana now overcautious, content to shoot squarely for the middle.",
+      "albumYear": "2003",
+      "id": 8
+    },
+    {
+      "artist": "The Dave Brubeck Quartet",
+      "albumName": "Time Out",
+      "albumPicture": "https://m.media-amazon.com/images/I/81tHyH2mfuL._SL1500_.jpg",
+      "albumInfo": "Time Out is a studio album by the American jazz group the Dave Brubeck Quartet, released in 1959 on Columbia Records. Recorded at Columbia's 30th Street Studio in New York City, it is based upon the use of time signatures that were unusual for jazz such as 9 8, 6 4 and 5 4.[6] The album is a subtle blend of cool and West Coast jazz.[7][8]  The album peaked at No. 2 on the Billboard pop albums chart, and was the first jazz album to sell a million copies.[9] The single \"Take Five\" off the album was also the first jazz single to sell one million copies.[9] By 1963, the record had sold 500,000 units, and in 2011 it was certified double platinum by the RIAA, signifying over two million records sold.[10][11] The album was inducted in the Grammy Hall of Fame in 2009.",
+      "albumYear": "1959",
+      "id": 9
+    },
+    {
+      "artist": "Julian Lage",
+      "albumName": "Avalon",
+      "albumPicture": "https://is4-ssl.mzstatic.com/image/thumb/Music4/v4/91/70/49/917049b1-d44b-cb76-30a2-ab7e707aee62/737534399729_cover.tif/1200x1200bf-60.jpg",
+      "albumInfo": "Avalon is an album by guitarists Julian Lage and Chris Eldridge, released in 2014. The album was produced and engineered by Kenneth Pattengale of The Milk Carton Kids and mastered by Dan Millice.[1] It was recorded at the Avalon theatre in Easton, Maryland. On the album Lage plays a 000-18 Martin Guitar from 1939, and Eldridge plays a Martin D-18 from 1937. Lage and Eldridge have described the album as a “love letter to the acoustic guitar.”[2]",
+      "albumYear": "2014",
+      "id": 10
+    },
+    {
+      "artist": "Tom Misch",
+      "albumName": "Geography",
+      "albumPicture": "https://m.media-amazon.com/images/I/81UCBBsAXkL._SL1200_.jpg",
+      "albumInfo": "Geography has received generally positive reviews from critics. At Metacritic, which assigns a normalised rating out of 100 to reviews from mainstream publications, the album received an average score of 73, based on 11 reviews.",
+      "albumYear": "2018",
+      "id": 11
     }
   ]
 }

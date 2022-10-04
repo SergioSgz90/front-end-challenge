@@ -15,7 +15,6 @@ function App (): JSX.Element {
       <div className="App">
         <Layout>
           <Routes>
-            
             <Route
               path="albumList"
               element={

@@ -1,13 +1,12 @@
 import styles from "./index.module.css";
 import Trash from "../../assets/Trash.svg";
 import ArrowRepeat from "../../assets/ArrowRepeat.svg";
+import { Link, useHref } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { iAlbum } from "../../models/iAlbum";
 import { getAlbumbyId } from "../../../services/http-albums";
 import { AlbumListContext } from "../../context/albumList.context";
-
-
 
 export const AlbumUpdate = (): JSX.Element => {
   const initialState: iAlbum = {
@@ -96,12 +95,13 @@ export const AlbumUpdate = (): JSX.Element => {
             alt="delete"
             onClick={() => handleDelete()}
           />
-          <img
-            className={styles.buttons}
-            src={ArrowRepeat}
-            alt="update"
-            onClick={() => handleUpdate()}
-          />
+     
+            <img
+              className={styles.buttons}
+              src={ArrowRepeat}
+              alt="update"
+              onClick={() => handleUpdate()}
+            />
         </div>
       </div>
     </main>

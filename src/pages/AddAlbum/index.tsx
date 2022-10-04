@@ -79,7 +79,7 @@ export const AddAlbum = () => {
           />
 
           <button className={styles.button} type="submit">
-            Upload Sound
+            ADD
           </button>
         </form>
       </div>

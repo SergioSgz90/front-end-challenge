@@ -12,3 +12,10 @@
   display: flex;
   height: 30px;
 }
+
+.AddAlbum_button:hover {
+
+  height: 35px;
+
+}
+
