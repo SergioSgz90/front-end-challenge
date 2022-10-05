@@ -5,7 +5,7 @@ export const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <Link to='albumList'>
-        <img src={logo_header} className={styles.logo} />
+        <img src={logo_header} className={styles.logo} alt="logo" />
       </Link>
     </header>
   )
