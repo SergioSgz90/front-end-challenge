@@ -29,10 +29,19 @@ Developed by: Sergio Garcia
 
 1. To run the app run the following commands in the terminal:
 
-npm i
+ (DEV MODE)
+-> npm i
+-> npm run server
+-> npm run dev  
 
-npm run server
+or 
 
-npm run dev
+ (BUILD MODE)
+-> npm i
+-> npm run server
+-> npm run build
+-> npm run preview
+
+
 
 
