@@ -6,7 +6,7 @@ import { iAlbum } from '../../models/iAlbum'
 import { getAlbumbyId } from '../../../services/http-albums'
 
 export const AlbumInfo = (): JSX.Element => {
-  const [info, setInfo] = useState<iAlbum|null>(null)
+  const [info, setInfo] = useState<any>(null)
   const { id } = useParams<{ id: string }>()
 
   useEffect(

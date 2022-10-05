@@ -8,7 +8,7 @@ import { getAlbumbyId } from '../../../services/http-albums'
 import { AlbumListContext } from '../../context/albumList.context'
 
 export const AlbumUpdate = (): JSX.Element => {
-  const initialState: iAlbum = {
+  const initialState: Partial <iAlbum> = {
     artist: '',
     albumName: '',
     albumPicture: '',
@@ -17,25 +17,22 @@ export const AlbumUpdate = (): JSX.Element => {
   }
 
   const { deleteAlbum, updateAlbum } = useContext(AlbumListContext)
-  const [info, setInfo] = useState<iAlbum | null>(initialState)
+  const [info, setInfo] = useState<iAlbum>(initialState)
   const { id } = useParams<{ id: string }>()
 
-  const handleDelete = () => deleteAlbum(info.id as number)
+  const handleDelete = () => deleteAlbum(info.id as any)
   const handleUpdate = () => {
-    updateAlbum(info as iAlbum)
+    updateAlbum(info)
   }
 
   useEffect(() => {
-    getAlbumbyId(id).then(setInfo).catch(console.error)
+    getAlbumbyId(id).then(setInfo as any).catch(console.error)
   }, [id])
 
-  const handleChange = (event: SyntheticEvent) => {
-    const fieldName = event.currentTarget.name as HTMLElement
-    const newValue = event.currentTarget.value 
-    setInfo((prev) => ({
-      ...prev,
-      [fieldName]: newValue,
-    }))
+  const handleChange = (event: any) => {
+    const fieldName = event.currentTarget.name
+    const newValue = event.currentTarget.value
+    setInfo((prev) => ({ ...prev, [fieldName]: newValue }))
   }
 
   return (
